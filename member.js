@@ -1,8 +1,12 @@
-function skillsMember() {
-  return {
-    name: 'John',
-    age: 25,
-    skills: ['HTML', 'CSS', 'JS'],
-    salary: 15000,
-  };
+function skillsMember(){
+    return {
+        restrict: 'E',
+        templateUrl: 'modules/skills/views/member.html',
+        controller: 'SkillsMemberController',
+        controllerAs: 'skillsMemberCtrl',
+        bindToController: true,
+        scope: {
+            member: '='
+        }
+    }
 }
